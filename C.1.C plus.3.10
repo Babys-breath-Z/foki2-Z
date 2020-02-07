@@ -1,0 +1,24 @@
+//使用转义序列
+#include<stdio.h>
+int main(void)
+{
+	float s;
+	printf("\aEnter your desired monthly salary:");// \a 警报 
+	printf(" $_______\b\b\b\b\b\b\b");               // \b 退格； 
+	scanf("%f",&s);	                            
+	printf("\n\t$%.2f a month is $%.2f a year.", s, s*12.0);// \t 水平制表符 
+	printf("\rGee!\n");	// \r 回车 
+
+	
+	return 0; 
+ } 
+ 
+ 输出结果为:
+ 
+ Enter your desired monthly salary: $4000.0_
+
+Gee!    $4000.00 a month is $48000.00 a year.
+
+--------------------------------
+Process exited after 6.863 seconds with return value 0
+请按任意键继续. . .
