@@ -1,0 +1,21 @@
+//typesize.C --打印类型大小 
+#include<stdio.h>
+int main (void)
+{
+	// C99 为类型大小提供%zd装换说明
+	
+	//%zd 并不适用？？？？
+  //所以我还是用了%d
+	// p62 long 的大小为8，我的输出为4; ？？？？？ 
+  
+	printf("Type int has a size of %d bytes. \n", sizeof(int));
+	printf("Type char has a size of %d bytes. \n", sizeof(char));
+	printf("Type long has a size of %d bytes. \n", sizeof(long));
+	printf("Type long long has a size of %d bytes. \n", sizeof(long long));
+	printf("Type double has a size of %d bytes. \n", sizeof(double));
+	printf("Type long double has a size of %d bytes. \n", sizeof(long double));
+	
+	//sizeof 为C语言的内置运算符，以字节为单位给出指定类型大小 
+	getchar();
+	return 0;
+ } 
