@@ -1,0 +1,25 @@
+//参数错误类型
+#include<stdio.h>
+int main (void)
+{
+	int n = 4;
+	int m = 5;
+	float x = 7.0f;
+	float y = 8.0f;
+	
+	printf("%d \n",n,m);//参数太少 
+	printf("%d %d %d \n",n);//参数太多 
+	printf("%d %d \n", x, y);//值的类型不符合 
+	
+	return 0;
+ }
+ 
+ 
+ 输出结果为:
+4
+4 2036020640 2417296
+0 0
+
+--------------------------------
+Process exited after 0.2339 seconds with return value 0
+请按任意键继续. . .
